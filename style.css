@@ -1,8 +1,15 @@
-img{ 
-
-    width:30vw;
-
+img { 
+    width: 30vw;
 }
-#index{ background-image: url("/assets/Nubes\ en\ el\ cielo\ .avif");
 
+#index { 
+    background-image: url("/assets/Nubes\ en\ el\ cielo\ .avif");
+    background-size: cover;
+    background-position: center;
+}
+
+#escena6 { 
+    background-image: url("./assets/Cielo\ Rosado.jpg");
+    background-size: cover;
+    background-position: center;
 }

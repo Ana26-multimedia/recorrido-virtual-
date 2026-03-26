@@ -21,6 +21,13 @@ img {
     background-size: cover;
 }
 
+#index h1 {
+    font-size: 48px;
+}
+#index a {
+    font-size: 24px;
+}
+
 #escena6 { 
     background-image: url("./assets/Cielo%20Rosado.jpg");
     background-size: cover;

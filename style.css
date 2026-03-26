@@ -19,13 +19,12 @@ img {
 #index { 
     background-image: url("/assets/Nubes\ en\ el\ cielo\ .avif");
     background-size: cover;
-    background-position: center;
 }
 
 #escena6 { 
     background-image: url("./assets/Cielo\ Rosado.jpg");
     background-size: cover;
-    background-position: center;
+    
 }
 
 a {
@@ -34,4 +33,14 @@ a {
     display: inline-block;
     margin: 10px 0;
     color: #f34eed;
+}
+
+#escena4 {
+    background-image: url("./assets/Cielo\ estrellado.jpg");
+    background-size: cover;
+}
+
+#escena4 h1,
+#escena4 a {
+    color: white;
 }

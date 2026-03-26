@@ -1,0 +1,1 @@
+const listatextos = [ "Esta es la exploración de los cielos ", "Hellooo Don jose", "Paso usted por mi casa" ,"por su casa yo pase" ,"vio usted a mi abuela" ,"a su abuela yo la vi","adios Don pepito", "adios Don jose"];

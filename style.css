@@ -36,11 +36,16 @@ a {
 }
 
 #escena4 {
-    background-image: url("./assets/Cielo\ estrellado.jpg");
+    background-image: url("./assets/Cielo\estrellado.jpg");
     background-size: cover;
 }
 
 #escena4 h1,
 #escena4 a {
     color: white;
+}
+
+#escena5{
+    background-image:url("/assets/Sol.jpg");
+    background-size: cover;
 }

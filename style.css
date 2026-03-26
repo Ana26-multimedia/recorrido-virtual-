@@ -17,12 +17,12 @@ img {
 }
 
 #index { 
-    background-image: url("/assets/Nubes\ en\ el\ cielo\ .avif");
+    background-image: url("./assets/Nubes%20en%20el%20cielo%20.avif");
     background-size: cover;
 }
 
 #escena6 { 
-    background-image: url("./assets/Cielo\ Rosado.jpg");
+    background-image: url("./assets/Cielo%20Rosado.jpg");
     background-size: cover;
     
 }
@@ -36,7 +36,7 @@ a {
 }
 
 #escena4 {
-    background-image: url("./assets/Cielo\estrellado.jpg");
+    background-image: url("./assets/Cielo%20estrellado.jpg");
     background-size: cover;
 }
 
@@ -46,6 +46,11 @@ a {
 }
 
 #escena5{
-    background-image:url("/assets/Sol.jpg");
+    background-image:url("./assets/Sol.jpg");
+    background-size: cover;
+}
+
+#escena2{ 
+    background-image: url("./assets/avion%20de%20papel.jpg");
     background-size: cover;
 }

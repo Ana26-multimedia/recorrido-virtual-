@@ -27,3 +27,15 @@ img {
     background-size: cover;
     background-position: center;
 }
+
+a {
+    font-size: 20px;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 10px 0;
+    color: #f34eed;
+}
+
+a:hover {
+    font-size: 22px;
+}

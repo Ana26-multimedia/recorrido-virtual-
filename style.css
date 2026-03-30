@@ -201,3 +201,30 @@ background-color: rgb(121, 179, 240);
 
 }
 
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none; /* Evita que el usuario haga clic en el video */
+  overflow: hidden;
+}
+
+.video-background iframe {
+  width: 100vw;
+  height: 56.25vw; /* Mantiene proporción 16:9 */
+  min-height: 100vh;
+  min-width: 177.77vh; /* 100 * 16 / 9 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contenido {
+  position: relative;
+  color: white;
+  z-index: 1;
+}

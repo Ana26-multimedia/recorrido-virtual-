@@ -67,24 +67,137 @@ background-color: rgb(121, 179, 240);
 
 
 #dibujo {
-    width: 40vw;
-    height: 40vw;
-    background-color: rgb(215, 106, 186);
+    width: 20vw;
+    height: 20vw;
     display: flex;
     justify-content: center;
     align-items: center;
     animation-name: cambiarelcolor;
     animation-duration: 8s;
     animation-iteration-count: infinite;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    right: 15%;
 }
 
 @keyframes cambiarelcolor {
-    0% { background-color: rgb(0, 31, 188); }
-    50% { background-color: rgb(106, 186, 215); }
-    100% { background-color: rgb(106, 150, 215); }
+    0% { background-color: rgb(188, 100, 0); }
+    50% { background-color: rgb(247, 172, 21); }
+    100% { background-color: rgb(255, 238, 0); }
+}
 
 
-body {
-    cursor: url("assets/Mi-cursor.cur"), auto;
+.rayos {
+  position: absolute;
+  width: 30vw;   
+  height: 30vw;
+  animation: girar 10s linear infinite;
+}
+
+
+.rayo {
+  position: absolute;
+  width: 4px;
+  height: 8vw;   
+  background: orange;
+  top: 0;
+  left: 50%;
+  transform-origin: bottom center;
+}
+
+
+.rayo:nth-child(1) { transform: rotate(0deg); }
+.rayo:nth-child(2) { transform: rotate(60deg); }
+.rayo:nth-child(3) { transform: rotate(120deg); }
+.rayo:nth-child(4) { transform: rotate(180deg); }
+.rayo:nth-child(5) { transform: rotate(240deg); }
+.rayo:nth-child(6) { transform: rotate(300deg); }
+
+
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+ 
+.contenedor-pajaro  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.pajaro {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  transform: scale(2); 
+  transform-origin: center; 
+}
+
+.cuerpo {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  background: #3498db;
+  border-radius: 0 0 100px 100px; /* Forma de media luna */
+  top: 20px;
+}
+
+
+.cabeza {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: #3498db;
+  border-radius: 50%;
+  left: 55px;
+  top: 0;
+}
+
+.ojo {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  left: 75px;
+  top: 10px;
+  z-index: 2;
+}
+
+
+.pico {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 15px solid #f39c12;
+  left: 88px;
+  top: 12px;
+}
+
+.ala {
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  background: #2980b9;
+  border-radius: 50% 50% 0 0;
+  left: 20px;
+  top: 15px;
+  transform-origin: bottom;
+  animation: fly 0.4s ease-in-out infinite alternate; /* Animación infinita */
+}
+
+
+@keyframes fly {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-60deg);
+  }
+
 }
 

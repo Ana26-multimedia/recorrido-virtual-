@@ -83,6 +83,8 @@ background-color: rgb(121, 179, 240);
     50% { background-color: rgb(106, 186, 215); }
     100% { background-color: rgb(106, 150, 215); }
 
-   body {
-  cursor: url("assets/Mi-cursor.cur"), auto;
+
+body {
+    cursor: url("assets/Mi-cursor.cur"), auto;
 }
+
